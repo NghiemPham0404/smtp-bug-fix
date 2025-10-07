@@ -133,9 +133,9 @@ class EmailService:
          mx_record = str(records[0].exchange)
 
          # Step 3: Try connecting SMTP (optional, skip in dev)
-         # server = smtplib.SMTP(timeout=5)
-         # server.connect(mx_record)
-         # server.quit()
+         server = smtplib.SMTP(timeout=5)
+         server.connect(mx_record)
+         server.quit()
          return True
       except Exception:
          return False
