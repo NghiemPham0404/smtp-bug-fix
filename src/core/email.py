@@ -19,6 +19,8 @@ class MailSettings(BaseSettings):
 
     class Config:
         env_file = ".env"
+        extra = "ignore"
+
 
 settings = MailSettings()
 
