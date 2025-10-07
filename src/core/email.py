@@ -36,3 +36,9 @@ conf = ConnectionConfig(
 )
 
 fm = FastMail(conf)
+
+# Setup Jinja2 Environment
+templates = Environment(
+    loader=FileSystemLoader("/app/templates"),
+    autoescape=select_autoescape(["html", "xml"])
+)

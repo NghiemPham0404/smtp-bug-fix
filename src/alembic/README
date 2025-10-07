@@ -1,0 +1,37 @@
+# Alembic Commands for FastAPI
+
+Alembic quick guidelines
+
+## generate
+```bash
+# init db
+alembic revision --autogenerate -m "init db"
+
+#migrate
+alembic revision -m "detail"
+```
+## upgrade to lastest version
+```bash
+alembic upgrade head
+```
+
+## downgrade
+```bash
+# downgrade head
+alembic downgrade head
+
+alembic downgrade -1
+
+
+# downgrade a specific revision
+alembic downgrade {revision_id}
+
+alembic downgrade -1
+```
+
+## clear all data (strictly used on development environment)
+```bash
+alembic downgrade dd07fcc8e613
+alembic downgrade -1
+alembic upgrade head
+```

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your OTP Code</title>
+  </head>
+  <body
+    style="margin: 0; padding: 0; background-color: #f4f4f4; font-family: Roboto, SFProDisplay-Regular, Helvetica, Arial, sans-serif;"
+  >
+    <table
+      role="presentation"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+      style="background-color: #f4f4f4; padding: 40px 0;"
+    >
+      <tr>
+        <td align="center">
+          <table
+            role="presentation"
+            cellpadding="0"
+            cellspacing="0"
+            width="600"
+            style="background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);"
+          >
+            <tr>
+              <td
+                align="center"
+                style="background-color: orange; color: white; padding: 24px;"
+              >
+                <h1 style="margin: 0; font-size: 24px;">Footprints</h1>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding: 32px;">
+                <h2 style="color: #1f2937; font-size: 24px;">Email Verification</h2>
+                <p style="color: #4b5563; font-size: 16px;">
+                  Please use the following One-Time Password (OTP) to verify your email address:
+                </p>
+
+                <div
+                  style="font-size: 32px; font-weight: bold; color: orange; letter-spacing: 4px; text-align: center; margin: 20px 0;"
+                >
+                  {{ otp }}
+                </div>
+
+                <p style="color: #4b5563; font-size: 14px;">
+                  This OTP will expire in <strong>5 minutes</strong>. Please do not share it with anyone.
+                </p>
+
+                <p style="color: #6b7280; font-size: 13px; margin-top: 40px;">
+                  If you did not request this code, you can safely ignore this email.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td
+                align="center"
+                style="background-color: #f9fafb; color: #9ca3af; padding: 16px; font-size: 12px;"
+              >
+                © 2025 Footprints. All rights reserved.
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

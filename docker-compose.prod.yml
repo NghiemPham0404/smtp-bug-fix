@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  fastapi:
+    image: 846244128482.dkr.ecr.ap-southeast-1.amazonaws.com/footprints_backend_dev:latest
+    restart: always
+    env_file:
+      - ./.env
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    ports:
+      - "80:80"
+    depends_on:
+      - fastapi
